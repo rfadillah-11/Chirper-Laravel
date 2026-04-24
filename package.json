@@ -25,5 +25,13 @@
     "license": "ISC",
     "dependencies": {
         "express": "^5.2.1"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rfadillah-11/laravel-chirper.git"
+    },
+    "bugs": {
+        "url": "https://github.com/rfadillah-11/laravel-chirper/issues"
+    },
+    "homepage": "https://github.com/rfadillah-11/laravel-chirper#readme"
 }
