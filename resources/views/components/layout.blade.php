@@ -14,7 +14,7 @@
 <body class="min-h-screen flex flex-col font-sans bg-[#232946]">
     <nav class="navbar bg-[#121629]">
         <div class="navbar-start">
-            <a href="/" class="btn btn-ghost text-2xl font-bold font-['Quicksand'] hover:bg-transparent hover:bg-transparent hover:border-transparent">𓏲๋࣭࣪˖🪼.ᐟ<span class="bg-gradient-to-r from-[#eebbc3] to-[#b8c1ec] bg-clip-text text-transparent">Chirper</span></a>
+            <a href="/" class="btn btn-ghost text-2xl font-bold font-['Quicksand'] hover:bg-transparent hover:bg-transparent hover:border-transparent">🎐<span class="text-[#fffffe]"> ๋࣭ ࣪ ˖</span><span class="bg-gradient-to-r from-[#eebbc3] to-[#b8c1ec] bg-clip-text text-transparent">Chirper</span></a>
         </div>
         <div class="navbar-end gap-2">
             <a href="#" class="btn btn-ghost btn-sm bg-[#eebbc3] text-[#232946] hover:bg-[#232946] hover:text-[#eebbc3] transition-all duration-300 active:translate-y-0.5">Sign In</a> 
