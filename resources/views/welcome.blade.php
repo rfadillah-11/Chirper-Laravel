@@ -4,7 +4,7 @@
     </x-slot :title>
     <div class="max-w-2xl mx-auto">
         @foreach ($chirps as $chirp)
-            <div class="card shadow-xl mt-8 backdrop-blur-lg bg-[#eebbc3]/25 rounded-2xl border-2 border-[#121629]">
+            <div class="card shadow-xl mt-8 backdrop-blur-lg bg-[#eebbc3] rounded-2xl border-2 border-[#121629]">
                 <div class="card-body">
                     <div>
                         <div class="text-justify text-[#232946] font-bold font-['Quicksand']">{{ $chirp['author' ] }}</div>
