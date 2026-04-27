@@ -7,8 +7,8 @@
             <div class="card shadow-xl mt-8 backdrop-blur-lg bg-[#b8c1ec]/25 rounded-2xl border-2 border-[#121629]">
                 <div class="card-body">
                     <div>
-                        <div class="mt-1 text-justify text-[#b8c1ec] font-['Quicksand']">{{ $chirp['author' ] }}</div>
-                        <div class="mt-1 text-justify text-[#b8c1ec] font-['Quicksand']">{{ $chirp['message' ] }}</div>
+                        <div class="text-justify text-[#b8c1ec] font-semibold font-['Quicksand']">{{ $chirp['author' ] }}</div>
+                        <div class="mt-1 text-[#b8c1ec] font-['Quicksand']">{{ $chirp['message' ] }}</div>
                         <div class="mt-2 text-justify text-[#b8c1ec] font-['Quicksand']">{{ $chirp['time' ] }}</div>
                     </div>
                 </div>
