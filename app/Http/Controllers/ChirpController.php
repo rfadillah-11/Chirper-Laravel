@@ -21,7 +21,7 @@ class ChirpController extends Controller
             ],
             [
                 'author' => 'Faizan Jazib Abqory',
-                'message' => 'Working on something cool with Chirper...',
+                'message' => 'Working on something cool with Chirper.',
                 'time' => '3 hours ago'
             ]
         ];
