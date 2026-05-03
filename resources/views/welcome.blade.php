@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="lg:col-span-2 space-y-6 mr-3">
-                <h2 class="text-2xl font-['Poppins'] font-bold text-[#fffffe] mb-6 border-b-2 border-[#b8c1ec]/30 pb-2">Latest Chirps ‎ 𐙚</h2>
+                <h2 class="text-2xl font-['Poppins'] font-bold text-[#fffffe] mb-6 border-b-2 border-[#b8c1ec]/30 pb-2">Latest Chirps ‎ ⋆˚࿔</h2>
                 @foreach ($chirps as $chirp)
                     <div class="card shadow-xl backdrop-blur-lg bg-[#6283cb]/20 rounded-2xl border border-[#b8c1ec]/20 transition-all hover:scale-[1.01] hover:border-[#b8c1ec] duration-400 cursor-pointer">
                         <div class="card-body">
