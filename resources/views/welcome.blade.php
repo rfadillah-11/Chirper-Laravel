@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -19,24 +20,25 @@
             Welcome
         </x-slot:tittle>
         
-        <!-- Grid dengan perbandingan 1:2 (kiri 1, kanan 2) -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-9 max-w-8xl mx-auto mt-5">
             
-            <!-- Kolom Kiri: Welcome Card (1 bagian) -->
-            <div class="lg:col-span-1">
-                <div class="card bg-gradient-to-br from-[#628ecb] to-[#0a1d39] rounded-2xl border-2 border-[#121629] shadow mt-8">
-                    <div class="card-body">
-                        <h1 class="text-3xl font-bold text-[#fffffe]">Welcome to Chirper!</h1>
-                        <p class="mt-4 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
-                        <p class="mt-2 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">Now this is live on the internet! 🎉 <br>Chirper adalah sebuah platform mikroblogging yang ramah, dimana pengguna dapat memposting pesan singkat yang disebut "chirps", melihat apa yang dikatakan orang lain, dan berinteraksi secara real time.</p>
-                    </div>
+            <div class="border-2 border-[#121629] overflow-hidden rounded-t-[32px] ml-2">
+                <div class="bg-gradient-to-br from-[#6283cb] to-[#121629] p-7 border-t border-x border-[#b8c1ec]/20 rounded-t-[32px]">
+                    <h1 class="text-3xl font-['Poppins'] font-bold text-[#fffffe]">Welcome to Chirper!</h1>
+                    <p class="mt-2 text-[#b8c1ec] font-['Quicksand'] text-sm">Now this is live on the internet! 🎉</p>
+                </div>
+                <div class="bg-[#0a0f1a] p-6 border border-[#b8c1ec]/20 rounded-b-[32px]">
+                    <p class="text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
+                    <hr class="border border-[#b8c1ec]/25 my-3">
+                    <p class="mt-2 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">Selamat datang di Chirper! Di sini kamu bisa menuliskan ide-ide kecilmu, membaca chirps dari pengguna lain, dan berinteraksi dengan komunitas secara langsung. Yuk, mulai berkicau!</p>
                 </div>
             </div>
-
-            <!-- Kolom Kanan: List Chirps (2 bagian) -->
-            <div class="lg:col-span-2 space-y-4">
+            <div class="lg:col-span-2 space-y-6 mr-3">
+                <h2 class="text-2xl font-['Poppins'] font-bold text-[#fffffe] mb-6 border-b-2 border-[#b8c1ec]/30 pb-2">
+                Latest Chirps 🔥
+            </h2>
                 @foreach ($chirps as $chirp)
-                    <div class="card shadow-xl backdrop-blur-lg bg-[#b8c1ec]/25 rounded-2xl border-2 border-[#121629]">
+                    <div class="card shadow-xl backdrop-blur-lg bg-[#b8c1ec]/25 rounded-2xl border-2 border-[#121629] transition-transform hover:scale-[1.02] hover:border-[#00ffff] hover:shadow-[0_0_15px_#00ffff] duration-300 cursor-pointer">
                         <div class="card-body">
                             <div>
                                 <div class="font-bold text-[#fffffe] font-['Quicksand']">{{ $chirp['author'] }}</div>
