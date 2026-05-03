@@ -14,36 +14,40 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen flex flex-col bg-[#121629] font-sans">
+<body class="min-h-screen flex flex-col bg-[#0a0f1a] font-sans">
     <x-layout>
         <x-slot:tittle>
             Welcome
         </x-slot:tittle>
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-9 max-w-8xl mx-auto mt-5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-8xl mx-2 mt-5">
             
-            <div class="border-2 border-[#121629] overflow-hidden rounded-t-[32px] ml-2">
-                <div class="bg-gradient-to-br from-[#6283cb] to-[#121629] p-7 border-t border-x border-[#b8c1ec]/20 rounded-t-[32px]">
+            <div class="overflow-hidden rounded-[32px] mx-3">
+                <div class="p-9 bg-gradient-to-br from-[#6283cb] to-[#121629] border-t border-x border-[#b8c1ec]/20 rounded-t-[32px]">
                     <h1 class="text-3xl font-['Poppins'] font-bold text-[#fffffe]">Welcome to Chirper!</h1>
-                    <p class="mt-2 text-[#b8c1ec] font-['Quicksand'] text-sm">Now this is live on the internet! 🎉</p>
+                    <p class="mt-1 text-[#b8c1ec] font-['Quicksand'] text-sm">Now this is live on the internet! 🎉</p>
                 </div>
-                <div class="bg-[#0a0f1a] p-6 border border-[#b8c1ec]/20 rounded-b-[32px]">
-                    <p class="text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
-                    <hr class="border border-[#b8c1ec]/25 my-3">
-                    <p class="mt-2 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm">Selamat datang di Chirper! Di sini kamu bisa menuliskan ide-ide kecilmu, membaca chirps dari pengguna lain, dan berinteraksi dengan komunitas secara langsung. Yuk, mulai berkicau!</p>
+                <div class="bg-[#0a0f1a] p-9 border border-[#b8c1ec]/20 rounded-b-[32px]">
+                    <p class="mb-4 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-5.5">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
+                    <p class="text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-5.5">Here you can jot down your little ideas, read chirps from other users, and interact with the community directly. Let's start chirping!</p>
+                    <hr class="border border-[#b8c1ec]/25 my-7">
+                    <a href="#" class="btn btn-ghost font-['poppins'] bg-[#b8c1ec] text-[#0a0f1a] hover:bg-[#6283cb]/20 hover:text-[#fffffe] transition-all duration-300 active:translate-y-0.5 border border-[#b8c1ec]/25 py-7 rounded-xl w-full text-center text-base">Explore Now</a> 
                 </div>
             </div>
             <div class="lg:col-span-2 space-y-6 mr-3">
-                <h2 class="text-2xl font-['Poppins'] font-bold text-[#fffffe] mb-6 border-b-2 border-[#b8c1ec]/30 pb-2">
-                Latest Chirps 🔥
-            </h2>
+                <h2 class="text-2xl font-['Poppins'] font-bold text-[#fffffe] mb-6 border-b-2 border-[#b8c1ec]/30 pb-2">Latest Chirps ‎ 𐙚</h2>
                 @foreach ($chirps as $chirp)
-                    <div class="card shadow-xl backdrop-blur-lg bg-[#b8c1ec]/25 rounded-2xl border-2 border-[#121629] transition-transform hover:scale-[1.02] hover:border-[#00ffff] hover:shadow-[0_0_15px_#00ffff] duration-300 cursor-pointer">
+                    <div class="card shadow-xl backdrop-blur-lg bg-[#6283cb]/20 rounded-2xl border border-[#b8c1ec]/20 transition-all hover:scale-[1.01] hover:border-[#b8c1ec] duration-400 cursor-pointer">
                         <div class="card-body">
-                            <div>
-                                <div class="font-bold text-[#fffffe] font-['Quicksand']">{{ $chirp['author'] }}</div>
-                                <div class="mt-1 text-[#b8c1ec] font-['Quicksand']">{{ $chirp['message'] }}</div>
-                                <div class="mt-2 text-xs text-[#b8c1ec] font-['Quicksand']">{{ $chirp['time'] }}</div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#b8c1ec] to-[#6283cb] flex items-center justify-center text-[#0a0f1a] font-bold font-['Poppins'] text-sm shadow-md">
+                                    {{ substr($chirp['author'], 0, 1) }}
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-[#fffffe] font-['Quicksand']">{{ $chirp['author'] }}</div>
+                                    <div class="mt-1 text-xs text-[#b8c1ec]/70 font-['Quicksand']">{{ $chirp['time'] }}</div>
+                                    <div class="mt-3 text-[#b8c1ec] font-['Quicksand']">{{ $chirp['message'] }}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
