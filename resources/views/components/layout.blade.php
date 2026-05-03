@@ -17,7 +17,7 @@
         <div class="navbar-start">
             <a href="/" class="btn btn-ghost text-2xl font-['Poppins'] font-bold hover:bg-transparent hover:bg-transparent hover:border-transparent">🎐<span class="bg-gradient-to-r from-[#eebbc3] to-[#b8c1ec] bg-clip-text text-transparent">Chirper</span></a>
         </div>
-        <div class="navbar-end gap-4 mr-6">
+        <div class="navbar-end gap-2.5 mr-6">
             <a href="#" class="btn btn-ghost btn-sm bg-[#121629] text-[#fffffe] hover:bg-[#6283cb]/20 hover:text-[#fffffe] transition-all duration-300 active:translate-y-0.5 border border-[#fffff5]/35">Sign In</a> 
             <a href="#" class="btn btn-primary btn-sm bg-[#b8c1ec] text-[#0a0f1a] hover:bg-[#6283cb]/20 hover:text-[#fffffe] transition-all duration-300 border border-[#fffff5]/35 active:translate-y-0.5">Sign Up</a>
         </div>

@@ -27,11 +27,11 @@
                     <h1 class="text-3xl font-['Poppins'] font-bold text-[#fffffe]">Welcome to Chirper!</h1>
                     <p class="mt-1 text-[#b8c1ec] font-['Quicksand'] text-sm">Now this is live on the internet! 🎉</p>
                 </div>
-                <div class="bg-[#0a0f1a] p-9 border border-[#b8c1ec]/20 rounded-b-[32px]">
-                    <p class="mb-4 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-5.5">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
-                    <p class="text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-5.5">Here you can jot down your little ideas, read chirps from other users, and interact with the community directly. Let's start chirping!</p>
+                <div class="bg-[#0a0f1a] p-8 border border-[#b8c1ec]/20 rounded-b-[32px]">
+                    <p class="mb-4 text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-6">This is your brand new Laravel application. Time to make it sing (or chirp)!</p>
+                    <p class="text-justify text-[#b8c1ec] font-['Quicksand'] text-sm leading-6">Here you can jot down your little ideas, read chirps from other users, and interact with the community directly. Let's start chirping!</p>
                     <hr class="border border-[#b8c1ec]/25 my-7">
-                    <a href="#" class="btn btn-ghost font-['poppins'] bg-[#b8c1ec] text-[#0a0f1a] hover:bg-[#6283cb]/20 hover:text-[#fffffe] transition-all duration-300 active:translate-y-0.5 border border-[#b8c1ec]/25 py-7 rounded-xl w-full text-center text-base">Explore Now</a> 
+                    <a href="#" class="btn btn-ghost font-['poppins'] bg-[#b8c1ec] text-[#0a0f1a] hover:bg-[#6283cb]/20 hover:text-[#fffffe] transition-all duration-600 active:translate-y-0.5 active:scale-105 border border-[#b8c1ec]/25 py-7 rounded-xl w-full text-center text-base font-semibold tracking-wide">Explore Now</a>
                 </div>
             </div>
             <div class="lg:col-span-2 space-y-6 mr-3">
