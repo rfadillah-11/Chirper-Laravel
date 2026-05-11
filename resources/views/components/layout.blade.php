@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="lofi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
+
 <body class="min-h-screen flex flex-col font-sans bg-[#0a0f1a]">
     <nav class="navbar bg-[#0a0f1a] border-b border-[#fffffe]/25">
         <div class="navbar-start">
@@ -26,11 +28,12 @@
     <main class="flex-1 container mx-auto px-4 py-8">
         {{ $slot }}
     </main>
-
-    <footer class="footer footer-center p-5 bg-[#0a0f1a] border-t border-[#fffffe]/25 text-base-content text-xs text-[#fffffe]">
-        <div>
-            <p>© {{ date('Y') }} Chirper - Built with Laravel and 💙 by <span class="font-bold text-[#fffffe] font-['quicksand']">Rahma Fadillah </span>(240170095)</php>
-        </div>
-    </footer>
 </body>
+    
+<footer class="footer footer-center p-5 bg-[#0a0f1a] border-t border-[#fffffe]/25 text-base-content text-xs text-[#fffffe]">
+    <div>
+        <p>© {{ date('Y') }} Chirper - Built with Laravel and 💙 by <span class="font-bold text-[#fffffe] font-['quicksand']">Rahma Fadillah </span>(240170095)</php>
+    </div>
+</footer>
+
 </html>
